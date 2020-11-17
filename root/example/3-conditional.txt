@@ -1,9 +1,0 @@
-Hello, {{example1.yourName}}!
-
-Lets try conditional.
-
-{{#example3.showSecretText}}
-  Your are awesome!
-{{/example3.showSecretText}}
-
-Okay, we almost done. Lets see killer feature - directory/file name template. It's simple. Go to example #4 and #5

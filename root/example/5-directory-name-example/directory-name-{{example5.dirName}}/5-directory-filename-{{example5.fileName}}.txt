@@ -1,9 +1,0 @@
-Hello, {{example1.yourName}}!
-
-Yes, you can use template for directory naming also.
-Looks like that's it =)
-
-Almost forgot... take a look on "java-example" directory. There real example how we use RGenerator in real life.
-
-Best regards,
-Rostislav Maslov

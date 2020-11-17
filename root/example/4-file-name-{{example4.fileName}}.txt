@@ -1,3 +1,0 @@
-Hello, {{example1.yourName}}!
-
-Yes, you can use template for file naming. Take a look on example #5.

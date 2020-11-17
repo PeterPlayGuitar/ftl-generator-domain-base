@@ -1,9 +1,0 @@
-Hello, {{example1.yourName}}!
-
-Lets try something new. Here example of loops:
-What programming language do you know?
-{{#example2.languages}}
-{{number}} - {{name}}
-{{/example2.languages}}
-
-Simple, right? Lets see, how to use conditional operators. Go to example #3.
