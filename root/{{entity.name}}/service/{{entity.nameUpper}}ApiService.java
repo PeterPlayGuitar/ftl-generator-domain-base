@@ -26,7 +26,7 @@ public class {{entity.nameUpper}}ApiService {
     private final {{entity.nameUpper}}Repository {{entity.name}}Repository;
     private final MongoTemplate mongoTemplate;
 
-    public {{entity.nameUpper}}Doc create(Request request) throws {{entity.nameUpper}}ExistException {
+    public {{entity.nameUpper}}Doc create({{entity.nameUpper}}Request request) throws {{entity.nameUpper}}ExistException {
 
         {{entity.nameUpper}}Doc {{entity.name}}Doc = {{entity.nameUpper}}Mapping.getInstance().getRequestMapping().convert(request);
         return {{entity.name}}Doc;

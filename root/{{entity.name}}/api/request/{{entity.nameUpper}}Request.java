@@ -1,7 +1,5 @@
 package {{path}}.{{entity.name}}.api.request;
 
-import {{path}}.{{entity.name}}.model.Address;
-import {{path}}.{{entity.name}}.model.Company;
 import io.swagger.annotations.ApiModel;
 import lombok.Getter;
 import lombok.Setter;

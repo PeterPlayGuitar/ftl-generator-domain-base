@@ -34,10 +34,10 @@ public class {{entity.nameUpper}}ApiController {
             @ApiResponse(code = 200, message = "Success"),
             @ApiResponse(code = 400, message = "{{entity.nameUpper}} already exists")
     })
-    public OkResponse<{{entity.nameUpper}}FullResponse> registration(@RequestBody RegistrationRequest request) throws {{entity.nameUpper}}ExistException {
+    public OkResponse<{{entity.nameUpper}}Response> registration(@RequestBody {{entity.nameUpper}}Request request) throws {{entity.nameUpper}}ExistException {
 //        Integer i = 3/0;
 
-        return OkResponse.of({{entity.nameUpper}}Mapping.getInstance().getResponseFullMapping().convert({{entity.name}}ApiService.registration(request)));
+        return OkResponse.of({{entity.nameUpper}}Mapping.getInstance().getResponseFullMapping().convert({{entity.name}}ApiService.create(request)));
     }
 
     @GetMapping({{entity.nameUpper}}ApiRoutes.BY_ID)
@@ -78,7 +78,7 @@ public class {{entity.nameUpper}}ApiController {
                     @ApiResponse(code = 200, message = "Success")
             }
     )
-    public OkResponse<{{entity.nameUpper}}FullResponse> update(
+    public OkResponse<{{entity.nameUpper}}Response> update(
             @ApiParam(value = "{{entity.nameUpper}} id") @PathVariable String id,
             @RequestBody {{entity.nameUpper}}Request request
     ) throws {{entity.nameUpper}}NoExistException {
