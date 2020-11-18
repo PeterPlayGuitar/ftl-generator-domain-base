@@ -29,6 +29,7 @@ public class {{entity.nameUpper}}ApiService {
     public {{entity.nameUpper}}Doc create({{entity.nameUpper}}Request request) throws {{entity.nameUpper}}ExistException {
 
         {{entity.nameUpper}}Doc {{entity.name}}Doc = {{entity.nameUpper}}Mapping.getInstance().getRequestMapping().convert(request);
+        {{entity.name}}Repository.save({{entity.name}}Doc);
         return {{entity.name}}Doc;
     }
 

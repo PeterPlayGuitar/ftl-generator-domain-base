@@ -34,7 +34,7 @@ public class {{entity.nameUpper}}ApiController {
             @ApiResponse(code = 200, message = "Success"),
             @ApiResponse(code = 400, message = "{{entity.nameUpper}} already exists")
     })
-    public OkResponse<{{entity.nameUpper}}Response> registration(@RequestBody {{entity.nameUpper}}Request request) throws {{entity.nameUpper}}ExistException {
+    public OkResponse<{{entity.nameUpper}}Response> create(@RequestBody {{entity.nameUpper}}Request request) throws {{entity.nameUpper}}ExistException {
 //        Integer i = 3/0;
 
         return OkResponse.of({{entity.nameUpper}}Mapping.getInstance().getResponseFullMapping().convert({{entity.name}}ApiService.create(request)));
